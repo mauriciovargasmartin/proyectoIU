@@ -14,6 +14,14 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function all(){
+
+        return $this->sucessResponse(Category::all());
+
+
+    }
+
     public function index()
     {
         //
